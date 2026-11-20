@@ -1,0 +1,57 @@
+
+backend:
+  name: github
+  repo: vietha130906-droid/E-Magazine
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: "https://eloquent-zuccutto-c5d5c2.netlify.app"
+display_url: "https://eloquent-zuccutto-c5d5c2.netlify.app"
+
+collections:
+  - name: "magazine"
+    label: "E-Magazine Nhà sách Mão"
+    files:
+      - name: "article"
+        label: "Bài viết chính"
+        file: "content/article.json"
+        format: "json"
+        fields:
+          - label: "Tiêu đề"
+            name: "title"
+            widget: "string"
+          - label: "Sapo"
+            name: "sapo"
+            widget: "text"
+          - label: "Video phóng sự"
+            name: "video"
+            widget: "file"
+          - label: "Ảnh bìa"
+            name: "cover"
+            widget: "image"
+          - label: "Chương 1"
+            name: "chapter1"
+            widget: "object"
+            fields:
+              - { label: "Tiêu đề chương", name: "title", widget: "string" }
+              - { label: "Nội dung", name: "body", widget: "markdown" }
+              - { label: "Ảnh", name: "image", widget: "image", required: false }
+          - label: "Chương 2"
+            name: "chapter2"
+            widget: "object"
+            fields:
+              - { label: "Tiêu đề chương", name: "title", widget: "string" }
+              - { label: "Nội dung", name: "body", widget: "markdown" }
+              - { label: "Ảnh", name: "image", widget: "image", required: false }
+          - label: "Chương 3"
+            name: "chapter3"
+            widget: "object"
+            fields:
+              - { label: "Tiêu đề chương", name: "title", widget: "string" }
+              - { label: "Nội dung", name: "body", widget: "markdown" }
+              - { label: "Ảnh", name: "image", widget: "image", required: false }
+          - label: "Kết luận"
+            name: "conclusion"
+            widget: "markdown"
