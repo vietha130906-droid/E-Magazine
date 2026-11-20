@@ -16,6 +16,8 @@
 
 <body>
 
+  <div class="reading-progress"></div>
+
   <!-- THANH ĐIỀU HƯỚNG -->
   <nav class="navbar">
     <a href="#home" class="logo">MÃO<span>.</span></a>
@@ -30,6 +32,7 @@
   <!-- TRANG BÌA -->
   <header class="hero" id="home">
     <div class="hero-image"></div>
+
     <div class="hero-content">
       <p class="eyebrow">E-MAGAZINE · HÀ NỘI · VĂN HÓA ĐỌC</p>
 
@@ -48,63 +51,65 @@
         không gian văn hóa đã trở thành một phần ký ức Hà Nội.
       </p>
 
-      <a href="#video" class="hero-button">Khám phá câu chuyện <span>↓</span></a>
+      <a href="#video" class="hero-button">
+        Khám phá câu chuyện <span>↓</span>
+      </a>
     </div>
 
     <div class="hero-caption">5 Đinh Lễ · Hà Nội</div>
   </header>
 
-  <!
-<!-- MỤC LỤC -->
-<section class="contents-section">
+  <!-- MỤC LỤC -->
+  <section class="contents-section">
     <div class="contents-inner">
 
-        <div class="contents-heading">
-            <span class="eyebrow">KHÁM PHÁ CÂU CHUYỆN</span>
-            <h2>Bắt đầu từ một câu chuyện</h2>
-            <p>
-                Từ những trang sách cũ đến ký ức của nhiều thế hệ độc giả.
-            </p>
-        </div>
+      <div class="contents-heading">
+        <span class="eyebrow">KHÁM PHÁ CÂU CHUYỆN</span>
+        <h2>Bắt đầu từ một câu chuyện</h2>
+        <p>
+          Từ những trang sách cũ đến ký ức của nhiều thế hệ độc giả.
+        </p>
+      </div>
 
-        <!-- VIDEO FEATURE -->
-        <a href="#video" class="contents-video">
-            <img src="images/cover.jpg" alt="Nhà sách Mão">
-            <div class="contents-video-overlay">
-                <span class="play-button">▶</span>
-                <div>
-                    <span class="contents-number">01 / PHÓNG SỰ VIDEO</span>
-                    <h3>Nhà sách Mão – Nơi những trang sách lưu giữ ký ức Hà Nội</h3>
-                    <span class="contents-link">XEM PHÓNG SỰ ↗</span>
-                </div>
-            </div>
+      <!-- VIDEO FEATURE -->
+      <a href="#video" class="contents-video">
+        <img src="images/cover.jpg" alt="Nhà sách Mão">
+        <div class="contents-video-overlay">
+          <span class="play-button">▶</span>
+          <div>
+            <span class="contents-number">01 / PHÓNG SỰ VIDEO</span>
+            <h3>Nhà sách Mão – Nơi những trang sách lưu giữ ký ức Hà Nội</h3>
+            <span class="contents-link">XEM PHÓNG SỰ ↗</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- BA CHƯƠNG BÀI VIẾT -->
+      <div class="contents-chapters">
+
+        <a href="#chapter-1" class="contents-card">
+          <span class="contents-card-number">02</span>
+          <h3>Dấu chân thời gian giữa chốn đô thị</h3>
+          <span class="contents-card-link">ĐỌC CHƯƠNG ↗</span>
         </a>
 
-        <!-- BA CHƯƠNG BÀI VIẾT -->
-        <div class="contents-chapters">
+        <a href="#chapter-2" class="contents-card">
+          <span class="contents-card-number">03</span>
+          <h3>Khi hiệu sách không chỉ là nơi bán sách</h3>
+          <span class="contents-card-link">ĐỌC CHƯƠNG ↗</span>
+        </a>
 
-            <a href="#chapter-1" class="contents-card">
-                <span class="contents-card-number">02</span>
-                <h3>Nhà sách Mão – Một địa chỉ trong ký ức nhiều thế hệ</h3>
-                <span class="contents-card-link">ĐỌC CHƯƠNG ↗</span>
-            </a>
+        <a href="#chapter-3" class="contents-card">
+          <span class="contents-card-number">04</span>
+          <h3>Giữ lại một không gian văn hóa giữa đô thị đổi thay</h3>
+          <span class="contents-card-link">ĐỌC CHƯƠNG ↗</span>
+        </a>
 
-            <a href="#chapter-2" class="contents-card">
-                <span class="contents-card-number">03</span>
-                <h3>Khi hiệu sách không chỉ là nơi bán sách</h3>
-                <span class="contents-card-link">ĐỌC CHƯƠNG ↗</span>
-            </a>
-
-            <a href="#chapter-3" class="contents-card">
-                <span class="contents-card-number">04</span>
-                <h3>Giữ lại một không gian văn hóa giữa đô thị đổi thay</h3>
-                <span class="contents-card-link">ĐỌC CHƯƠNG ↗</span>
-            </a>
-
-        </div>
+      </div>
     </div>
-</section>
--- GIỚI THIỆU -->
+  </section>
+
+  <!-- GIỚI THIỆU -->
   <section class="intro-section">
     <p class="section-label">LỜI DẪN</p>
     <p class="intro-text">
@@ -114,7 +119,7 @@
   </section>
 
   <!-- VIDEO PHÓNG SỰ -->
-<section class="video-section" id="video">
+  <section class="video-section" id="video">
     <div class="section-heading">
       <p class="section-label">VIDEO FEATURE</p>
       <h2>Một góc nhỏ giữa lòng phố sách</h2>
@@ -130,70 +135,87 @@
         Trình duyệt của bạn không hỗ trợ phát video.
       </video>
     </div>
+
     <p class="media-caption">
       Phóng sự: Nhà sách Mão – Nơi những trang sách lưu giữ ký ức Hà Nội
     </p>
   </section>
 
-  <!-- PHẦN 1 -->
+  <!-- CHƯƠNG 1 -->
   <section class="chapter-section" id="chapter-1">
+
     <div class="chapter-heading">
       <span class="chapter-number">01</span>
       <div>
         <p class="section-label">KÝ ỨC QUA NHIỀU THẾ HỆ</p>
-        <h2>Nhà sách Mão – Một địa chỉ trong ký ức nhiều thế hệ</h2>
+        <h2>Dấu chân thời gian giữa chốn đô thị</h2>
       </div>
     </div>
 
-    <figure class="wide-image">
-      <img src="images/maos-bookstore.jpg" alt="Không gian Nhà sách Mão">
-      <figcaption>Không gian Nhà sách Mão tại phố Đinh Lễ. Ảnh: [Tên tác giả]</figcaption>
-    </figure>
-
     <div class="article-content">
+
       <p class="lead">
-        Có những nơi chốn vẫn ở đó, lặng lẽ chứng kiến nhiều thế hệ trưởng thành.
-        Với không ít người yêu sách ở Hà Nội, Nhà sách Mão là một địa chỉ như thế.
+        Ẩn mình trên tầng hai khu tập thể cũ tại số 5 Đinh Lễ, Nhà sách Mão
+        không có vẻ ngoài nổi bật để thu hút sự chú ý của người qua đường.
       </p>
 
       <p>
-        [Mở đầu phần viết về Nhà sách Mão tại số 5 Đinh Lễ. Giới thiệu không gian
-        hiệu sách, vị trí trong phố sách Đinh Lễ và những nét đặc trưng mà độc giả
-        có thể cảm nhận khi ghé thăm.]
+        Ẩn mình trên tầng hai khu tập thể cũ tại số 5 Đinh Lễ, Nhà sách Mão không có vẻ ngoài nổi bật để thu hút sự chú ý của người qua đường. Muốn tìm đến hiệu sách, khách phải đi qua một lối nhỏ, men theo cầu thang cũ rồi mới bước vào không gian nằm khuất phía trên. Bên trong, những giá sách nối tiếp nhau, các chồng sách được xếp ở nhiều góc, lối đi không quá rộng. Không gian ấy mang dáng vẻ của một hiệu sách đã tồn tại qua nhiều năm tháng, nơi mỗi khoảng trống dường như đều được tận dụng để dành chỗ cho sách.
       </p>
 
-      <p>
-        [Đưa vào câu chuyện của độc giả lớn tuổi: lần đầu biết đến hiệu sách,
-        những lần ghé mua sách, ký ức gắn với một cuốn sách hoặc một giai đoạn
-        trong cuộc đời.]
-      </p>
-
-      <figure class="article-image">
-        <img src="images/readers.jpg" alt="Độc giả tại hiệu sách">
-        <figcaption>[Chú thích ảnh và nguồn ảnh]</figcaption>
+      <figure class="wide-image">
+        <img src="images/IMG_20261114_094145.jpg" alt="Không gian Nhà sách Mão">
+        <figcaption>Không gian bên trong Nhà sách Mão. Ảnh: Tư liệu phóng viên</figcaption>
       </figure>
 
       <p>
-        [Chuyển sang trải nghiệm của độc giả trung niên và người trẻ. Tìm ra
-        điểm gặp gỡ cũng như sự khác biệt trong cách mỗi thế hệ tìm đến Nhà sách Mão.]
+        Ít người biết rằng, trước khi trở thành một địa chỉ quen thuộc trên phố Đinh Lễ, Nhà sách Mão từng bắt đầu từ một quầy sách nhỏ ven đường gần hồ Hoàn Kiếm. Theo nhà văn Nguyễn Trương Quý, năm 1993, gia đình chuyển hoạt động kinh doanh lên tầng hai khu tập thể tại số 5 Đinh Lễ. Từ đó, hiệu sách dần gắn bó với sự hình thành và phát triển của phố sách Đinh Lễ, nơi hoạt động buôn bán, trao đổi sách từng bước tạo nên một nét sinh hoạt riêng giữa lòng Hà Nội.
       </p>
 
-      
-<div class="pull-quote">
-  <p class="pull-quote-label">MỘT MẢNH KÝ ỨC</p>
+      <p>
+        Hơn ba thập niên tồn tại, Nhà sách Mão đã chứng kiến những thay đổi đáng kể của thị trường xuất bản và thói quen đọc sách. Nếu hiện nay độc giả có thể dễ dàng tìm một cuốn sách trên Internet, thì trước đây, việc tiếp cận các tác phẩm văn học nước ngoài không đơn giản như vậy. Sách ngoại văn còn khan hiếm, người đọc phải tìm đến những hiệu sách quen thuộc hoặc các thư viện lớn để có cơ hội tiếp cận những tác phẩm mình quan tâm.
+      </p>
 
-  <blockquote>
-    “[Chọn một câu nói chân thực, giàu cảm xúc từ nhân vật phỏng vấn.]”
-  </blockquote>
+      <figure class="article-image">
+        <img src="images/IMG_20261114_095128.jpg" alt="Sách tại Nhà sách Mão">
+        <figcaption>Những giá sách lưu giữ dấu ấn của thời gian. Ảnh: Tư liệu phóng viên</figcaption>
+      </figure>
 
-  <p class="pull-quote-author">— [Tên nhân vật · Thế hệ độc giả]</p>
-</div>
+      <p>
+        Là người đã biết đến Nhà sách Mão từ những năm 1980, 1990, chú Đức vẫn nhớ thời kỳ nguồn sách nước ngoài còn hạn chế. Chú từng tìm đến những hiệu sách như thế này để đọc các tác phẩm văn học Nga, châu Âu và Mỹ. Khi ấy, sách thường được xếp thành từng chồng, giá sách chưa nhiều, người mua phải tự tìm kiếm giữa những cuốn sách đặt cạnh nhau thay vì lựa chọn theo từng khu vực được phân loại sẵn. Việc tìm sách đòi hỏi sự kiên nhẫn, nhưng cũng đem đến những bất ngờ không phải lúc nào cũng đoán trước được.
+      </p>
+
+      <p>
+        Nhắc đến cảm giác tìm được một cuốn sách đã cất công tìm kiếm, chú Đức chia sẻ:
+      </p>
+
+      <div class="pull-quote">
+        <p class="pull-quote-label">MỘT MẢNH KÝ ỨC</p>
+        <blockquote>
+          “Không những vui mà gần như bác còn cảm thấy mình vừa tìm được một báu vật.”
+        </blockquote>
+        <p class="pull-quote-author">— Chú Đức · Độc giả lâu năm</p>
+      </div>
+
+      <figure class="article-image">
+        <img src="images/IMG_20261114_094556.jpg" alt="Những cuốn sách tại Nhà sách Mão">
+        <figcaption>Những cuốn sách gắn với ký ức của nhiều thế hệ độc giả. Ảnh: Tư liệu phóng viên</figcaption>
+      </figure>
+
+      <p>
+        Cách ví von ấy phần nào cho thấy giá trị của những cuốn sách trong ký ức của một thế hệ độc giả. Khi nguồn sách chưa phong phú, mỗi tác phẩm tìm được có thể trở thành một phát hiện đáng quý. Niềm vui không chỉ nằm ở việc sở hữu cuốn sách, mà còn ở hành trình tìm kiếm và cảm giác được tiếp cận với những tri thức mới.
+      </p>
+
+      <p>
+        Thời gian trôi qua, nguồn sách tại Nhà sách Mão ngày càng đa dạng, cách bài trí cũng có những thay đổi. Tuy nhiên, hiệu sách vẫn giữ nét riêng của một địa chỉ bán sách lâu năm: không gian có phần chật hẹp, giá sách dày đặc và cách tìm kiếm đòi hỏi người đọc dành thời gian quan sát. Với những người từng gắn bó từ trước, sự thay đổi ấy không làm mất đi những ký ức đã có; với người đến sau, đó lại là nét hấp dẫn khiến họ muốn khám phá.
+      </p>
 
     </div>
   </section>
 
-  <!-- PHẦN 2 -->
-<section class="chapter-section" id="chapter-2">
+  <!-- CHƯƠNG 2 -->
+  <section class="chapter-section" id="chapter-2">
+
     <div class="chapter-heading">
       <span class="chapter-number">02</span>
       <div>
@@ -204,113 +226,103 @@
 
     <figure class="wide-image">
       <img src="images/dinhlle.jpg" alt="Phố Đinh Lễ">
-      <figcaption>Phố Đinh Lễ – không gian gắn với văn hóa sách của Hà Nội. Ảnh: [Tên tác giả]</figcaption>
+      <figcaption>Phố Đinh Lễ – không gian gắn với văn hóa sách của Hà Nội. Ảnh: Tư liệu phóng viên</figcaption>
     </figure>
 
     <div class="article-content">
+
       <p class="lead">
-        Trong thời đại một cuốn sách có thể được đặt mua chỉ bằng vài thao tác,
-        điều gì khiến người đọc vẫn muốn bước chân vào một hiệu sách truyền thống?
+        Sự phát triển của sách điện tử và các nền tảng mua bán trực tuyến khiến
+        việc tiếp cận sách ngày càng thuận tiện. Dẫu vậy, với nhiều độc giả,
+        việc trực tiếp đến hiệu sách vẫn mang lại những trải nghiệm riêng.
       </p>
 
       <p>
-        [Phân tích sự khác biệt giữa việc mua sách trực tiếp và mua sách trực tuyến,
-        giữa sách giấy và sách điện tử. Không chỉ nói về sự tiện lợi, hãy khai thác
-        trải nghiệm lựa chọn, chạm vào sách và gặp gỡ những người cùng sở thích.]
+        Sự phát triển của sách điện tử và các nền tảng mua bán trực tuyến khiến việc tiếp cận sách ngày càng thuận tiện. Dẫu vậy, với nhiều độc giả, việc trực tiếp đến hiệu sách, tự tay lật giở từng trang và tìm kiếm một cuốn sách yêu thích vẫn mang lại những trải nghiệm riêng.
       </p>
 
       <p>
-        [Đưa vào ý kiến của nhà văn Nguyễn Trương Quý về sự hình thành của phố sách
-        Đinh Lễ, giá trị văn hóa của những hiệu sách lâu đời và vị trí của Nhà sách
-        Mão trong đời sống đô thị.]
+        Theo nhà văn Nguyễn Trương Quý, mỗi hình thức tiếp cận sách đều đáp ứng những nhu cầu khác nhau. Mua sách trực tuyến có ưu thế về sự nhanh chóng, thuận tiện, trong khi việc đến hiệu sách mở ra cơ hội khám phá những cuốn sách nằm ngoài dự định ban đầu.
       </p>
 
-<div class="person-card">
-  <div class="person-card-label">GÓC NHÌN NHÂN VẬT</div>
-
-  <div class="person-card-content">
-    <p class="person-role">NHÀ VĂN · KHÁCH MỜI PHỎNG VẤN</p>
-    <h3>Nguyễn Trương Quý</h3>
-
-    <p>
-      [Bổ sung một vài dòng giới thiệu nhân vật phù hợp với nội dung
-      phỏng vấn và tư liệu đã xác minh.]
-    </p>
-
-    <div class="person-question">
-      Câu chuyện về phố sách Đinh Lễ và Nhà sách Mão nhìn từ góc độ
-      văn hóa đô thị.
-    </div>
-  </div>
-</div>
-
-
-      <figure class="article-image">
-        <img src="images/detail.jpg" alt="Những cuốn sách tại Nhà sách Mão">
-        <figcaption>[Chú thích ảnh và nguồn ảnh]</figcaption>
-      </figure>
-
-<div class="generation-section">
-  <p class="section-label">BA THẾ HỆ · BA CÁCH NHỚ</p>
-
-  <h3 class="generation-title">
-    Một hiệu sách, nhiều miền ký ức
-  </h3>
-
-  <p class="generation-intro">
-    Mỗi thế hệ tìm đến Nhà sách Mão với một câu chuyện riêng.
-    Có người trở lại để tìm ký ức, có người ghé qua như một thói quen,
-    cũng có người đang bắt đầu hành trình khám phá thế giới sách.
-  </p>
-
-  <div class="generation-timeline">
-
-    <div class="generation-item">
-      <span class="generation-number">01</span>
-      <div class="generation-line"></div>
-      <p class="generation-label">THẾ HỆ ĐI TRƯỚC</p>
-      <h4>Ký ức trở về</h4>
-      <p>
-        [Bổ sung câu chuyện của độc giả lớn tuổi: những lần ghé hiệu sách,
-        cuốn sách từng tìm mua hoặc ký ức gắn với Đinh Lễ.]
-      </p>
-    </div>
-
-    <div class="generation-item">
-      <span class="generation-number">02</span>
-      <div class="generation-line"></div>
-      <p class="generation-label">THẾ HỆ TRUNG NIÊN</p>
-      <h4>Một thói quen thân thuộc</h4>
-      <p>
-        [Bổ sung chia sẻ của độc giả trung niên về thói quen đọc sách,
-        lựa chọn sách và những lần quay lại Nhà sách Mão.]
-      </p>
-    </div>
-
-    <div class="generation-item">
-      <span class="generation-number">03</span>
-      <div class="generation-line"></div>
-      <p class="generation-label">THẾ HỆ TRẺ</p>
-      <h4>Những trang sách mới</h4>
-      <p>
-        [Bổ sung góc nhìn của độc giả trẻ: lý do tìm đến hiệu sách,
-        trải nghiệm khi chọn sách và cảm nhận về không gian nơi đây.]
-      </p>
-    </div>
-
-  </div>
-</div>
-
+      <div class="pull-quote">
+        <p class="pull-quote-label">GÓC NHÌN NHÀ VĂN</p>
+        <blockquote>
+          “Có khi chỉ định tìm một cuốn sách nhưng cuối cùng lại bị thu hút bởi một đầu sách khác, một bìa sách đẹp hay một chủ đề bất ngờ xuất hiện trên giá.”
+        </blockquote>
+        <p class="pull-quote-author">— Nguyễn Trương Quý · Nhà văn</p>
+      </div>
 
       <p>
-        [Kết nối câu chuyện cá nhân với ký ức cộng đồng: một hiệu sách có thể
-        lưu giữ những thói quen, cuộc gặp gỡ và tình yêu đọc sách như thế nào?]
+        Tại Nhà sách Mão, hành trình khám phá ấy đôi khi cần nhiều thời gian. Các đầu sách được sắp xếp đan xen, người mua có thể tự mình lần tìm hoặc nhờ đến sự hỗ trợ của người bán. Với những độc giả gắn bó lâu năm, cách tìm sách này đã trở thành một nét riêng của nhà sách.
       </p>
+
+      <p>
+        Không phải ai tìm đến đây cũng mang theo mong muốn tìm một cuốn sách hiếm. Có người đến vì muốn đọc trong yên tĩnh, có người tò mò về một hiệu sách cũ giữa phố Đinh Lễ, cũng có người tìm thấy ở đây cảm giác thân thuộc gắn với những kỷ niệm riêng.
+      </p>
+
+      <div class="person-card">
+        <div class="person-card-label">CÂU CHUYỆN ĐỘC GIẢ</div>
+        <div class="person-card-content">
+          <p class="person-role">ĐỘC GIẢ TRẺ · HỌC SINH LỚP 12</p>
+          <h3>Minh Anh</h3>
+          <p>
+            Đến từ Hưng Yên, Minh Anh cho biết dù không thường xuyên có dịp ghé thăm, mỗi lần đến Nhà sách Mão đều mang lại cảm giác đặc biệt.
+          </p>
+        </div>
+      </div>
+
+      <p>
+        Minh Anh, học sinh lớp 12 đến từ Hưng Yên, cho biết dù không thường xuyên có dịp ghé thăm, mỗi lần đến đây đều mang lại cho em cảm giác đặc biệt.
+      </p>
+
+      <div class="pull-quote">
+        <blockquote>
+          “Không gian ở đây thực sự giúp mình tập trung vào những cuốn sách. Nhà sách có rất nhiều thể loại sách khác nhau, mình có thể vừa ngồi đọc vừa không bị quá bận tâm đến thế giới bên ngoài.”
+        </blockquote>
+        <p class="pull-quote-author">— Minh Anh · Độc giả trẻ</p>
+      </div>
+
+      <p>
+        Chị Huyền lại nhớ đến hiệu sách bằng một cảm giác khác. Chị cho biết, điều khiến mình ấn tượng không hẳn là những đầu sách đặc biệt, mà là không gian yên tĩnh và cách bài trí mang nét xưa. Phần mái ngói cũ khiến chị nhớ đến ngôi nhà của ông bà ngoại, gợi lại những ký ức tuổi thơ bên những cuốn sách ông từng lưu giữ, trong đó có <em>Nhật ký trong tù</em> và <em>Nhật ký Đặng Thùy Trâm</em>. Cảm giác ấy không đến từ một sự kiện đặc biệt, mà bắt đầu từ những chi tiết bình dị: mái ngói, cách bài trí cũ hay những cuốn sách từng xuất hiện trong tuổi thơ. Nhà sách Mão vì thế không chỉ là nơi để tìm đọc, mà còn trở thành điểm chạm với những ký ức cá nhân.
+      </p>
+
+      <p>
+        Qua nhiều năm, hiệu sách vẫn đón những người đọc thuộc nhiều thế hệ. Người lớn tuổi tìm lại những tác phẩm từng gắn bó, người trẻ tìm đến để khám phá một không gian khác với các nhà sách hiện đại. Những gia đình đưa con đến đây vào dịp cuối tuần góp phần tạo nên sự tiếp nối ấy, khi việc đọc sách không chỉ là hoạt động cá nhân mà còn là khoảng thời gian được chia sẻ giữa các thành viên.
+      </p>
+
+      <div class="person-card">
+        <div class="person-card-label">GÓC NHÌN NHÂN VẬT</div>
+        <div class="person-card-content">
+          <p class="person-role">NHÀ VĂN · KHÁCH MỜI PHỎNG VẤN</p>
+          <h3>Nguyễn Trương Quý</h3>
+          <p>
+            Từ góc nhìn văn hóa đô thị, nhà văn chia sẻ về vai trò của những hiệu sách truyền thống trong đời sống thường ngày và sự kết nối giữa những người yêu sách.
+          </p>
+        </div>
+      </div>
+
+      <p>
+        Từ góc nhìn của nhà văn Nguyễn Trương Quý, những hiệu sách truyền thống còn góp phần tạo ra môi trường để việc đọc trở thành một phần trong sinh hoạt thường ngày của đô thị. Đây không chỉ là nơi phục vụ nhu cầu tìm kiếm tri thức của từng cá nhân mà còn là điểm gặp gỡ của những người cùng yêu sách.
+      </p>
+
+      <div class="pull-quote">
+        <blockquote>
+          “Những hiệu sách truyền thống như Nhà sách Mão có vai trò nhất định trong việc tạo ra môi trường ấy. Nó đưa sách đến gần với đời sống của người dân.”
+        </blockquote>
+        <p class="pull-quote-author">— Nguyễn Trương Quý · Nhà văn</p>
+      </div>
+
+      <p>
+        Mỗi người có thể nhớ Nhà sách Mão bằng một câu chuyện riêng: một cuốn sách từng khó tìm, một lần tình cờ bắt gặp tác phẩm yêu thích hay cảm giác thân thuộc khi bước vào căn phòng cũ. Những câu chuyện ấy được tích lũy qua năm tháng, khiến Nhà sách Mão không chỉ được nhận diện bằng địa chỉ 5 Đinh Lễ, mà còn bằng những trải nghiệm gắn bó với nhiều thế hệ độc giả Hà Nội. Những giá trị được bồi đắp qua thời gian ấy cũng đặt ra câu hỏi về cách gìn giữ các địa chỉ văn hóa lâu đời khi Hà Nội tiếp tục phát triển và đổi thay.
+      </p>
+
     </div>
   </section>
 
-  <!-- PHẦN 3 -->
- <section class="chapter-section" id="chapter-3">
+  <!-- CHƯƠNG 3 -->
+  <section class="chapter-section" id="chapter-3">
+
     <div class="chapter-heading">
       <span class="chapter-number">03</span>
       <div>
@@ -320,47 +332,87 @@
     </div>
 
     <div class="article-content">
+
       <p class="lead">
-        Một hiệu sách có thể chỉ chiếm một góc phố, nhưng những giá trị nó lưu giữ
-        đôi khi vượt xa diện tích của chính mình.
+        Trong dòng chảy phát triển của Hà Nội, những thay đổi về quy hoạch
+        và chỉnh trang đô thị đang từng bước làm thay đổi diện mạo nhiều khu phố.
       </p>
 
       <p>
-        [Thông tin về quy hoạch, chỉnh trang đô thị và những thay đổi có thể
-        tác động đến khu vực Nhà sách Mão. Cần dẫn nguồn tài liệu hoặc cơ quan
-        có thẩm quyền; phân biệt rõ phương án dự kiến với quyết định đã được ban hành.]
+        Trong dòng chảy phát triển của Hà Nội, những thay đổi về quy hoạch và chỉnh trang đô thị đang từng bước làm thay đổi diện mạo nhiều khu phố. Những công trình mới, không gian hiện đại được hình thành để đáp ứng nhu cầu phát triển của thành phố. Tuy nhiên, cùng với quá trình ấy, những địa điểm gắn bó lâu đời với đời sống cư dân cũng đứng trước những thay đổi khó tránh khỏi. Với phố Đinh Lễ, câu chuyện không chỉ nằm ở sự biến chuyển của hoạt động kinh doanh sách, mà còn là tương lai của những hiệu sách truyền thống đã góp phần tạo nên bản sắc riêng cho khu phố.
       </p>
 
       <p>
-        [Đưa vào cảm xúc, suy nghĩ của độc giả trước khả năng không gian quen thuộc
-        thay đổi hoặc không còn tồn tại.]
+        Đối với nhiều độc giả, khả năng Nhà sách Mão không còn duy trì được không gian như hiện nay là điều khiến họ không khỏi tiếc nuối. Bởi điều gắn bó với họ không đơn thuần là những cuốn sách từng mua, mà còn là căn phòng nhỏ với những giá sách ken dày, cầu thang hẹp và cảm giác thân thuộc mỗi lần ghé thăm. Nếu một ngày địa chỉ ấy không còn, họ vẫn có thể tiếp tục đọc sách, vẫn tìm thấy những cuốn sách yêu thích ở nơi khác, nhưng trải nghiệm và ký ức gắn với chính không gian ấy sẽ khó có thể được thay thế.
+      </p>
+
+      <div class="person-card">
+        <div class="person-card-label">GÓC NHÌN VĂN HÓA ĐÔ THỊ</div>
+        <div class="person-card-content">
+          <p class="person-role">NHÀ VĂN</p>
+          <h3>Nguyễn Trương Quý</h3>
+          <p>
+            Những suy ngẫm về lịch sử, ký ức cộng đồng và việc nhận diện những giá trị cần lưu giữ trong quá trình đô thị thay đổi.
+          </p>
+        </div>
+      </div>
+
+      <p>
+        Nhìn từ góc độ văn hóa đô thị, nhà văn Nguyễn Trương Quý cho rằng sự tồn tại của những địa chỉ như Nhà sách Mão cần được đặt trong mối quan hệ với lịch sử và ký ức cộng đồng. Ông nhấn mạnh, điều quan trọng không phải là giữ nguyên tất cả những gì thuộc về quá khứ, mà là nhận diện được những giá trị cần được lưu giữ.
+      </p>
+
+      <div class="pull-quote">
+        <blockquote>
+          “Điều đáng suy nghĩ là trong quá trình thay đổi ấy, chúng ta lựa chọn giữ lại những gì và bằng cách nào. Một thành phố không chỉ được tạo nên bởi những công trình lớn hay những dự án hiện đại, mà còn bởi những địa điểm nhỏ bé, những thói quen sinh hoạt và những mối quan hệ đã được hình thành qua thời gian.”
+        </blockquote>
+        <p class="pull-quote-author">— Nguyễn Trương Quý · Nhà văn</p>
+      </div>
+
+      <p>
+        Theo ông, một hiệu sách mới có thể được xây dựng với kiến trúc đẹp hơn, tiện nghi hơn, nhưng không thể ngay lập tức tạo ra lịch sử và ký ức mà một hiệu sách đã tích lũy trong vài chục năm. Chính những cuộc gặp gỡ, những cuốn sách được trao tay và sự gắn bó của nhiều thế hệ độc giả đã tạo nên giá trị riêng của một địa chỉ văn hóa. Vì thế, việc ghi chép, nghiên cứu và lưu giữ những câu chuyện gắn với các không gian như Nhà sách Mão cũng là một cách bảo tồn ký ức đô thị.
       </p>
 
       <p>
-        [Phân tích ý kiến của nhà văn Nguyễn Trương Quý về cách nhận diện,
-        đánh giá và gìn giữ những không gian văn hóa lâu đời trong đô thị.]
+        Trong bối cảnh đời sống hiện đại, gìn giữ những hiệu sách truyền thống không nhất thiết đồng nghĩa với việc ngăn cản sự phát triển. Thay vào đó, cần có những cách tiếp cận hài hòa giữa quy hoạch đô thị và bảo tồn giá trị văn hóa, đồng thời phát huy vai trò của các hiệu sách như không gian đọc, giao lưu và kết nối cộng đồng. Bởi một hiệu sách lâu đời không chỉ tồn tại nhờ những cuốn sách được bán ra, mà còn nhờ những giá trị tinh thần được bồi đắp qua thời gian. Giữ lại những không gian ấy cũng chính là giữ lại những dấu ấn đời sống đã góp phần làm nên bản sắc của Hà Nội.
       </p>
 
-      <p>
-        [Đề cập những cách thức có thể góp phần bảo tồn hiệu sách truyền thống:
-        gìn giữ không gian, ghi lại ký ức, phát huy hoạt động văn hóa đọc và
-        kết nối cộng đồng.]
-      </p>
     </div>
   </section>
 
-  <!-- KẾT BÀI -->
+  <!-- LỜI KẾT -->
   <section class="ending-section">
-    <p class="section-label">LỜI KẾT</p>
-    <h2>Điều còn lại sau những trang sách</h2>
 
-    <p>
-      [Khép lại bằng câu chuyện hoặc lời chia sẻ đáng nhớ nhất của một độc giả.
-      Từ câu chuyện ấy, nhấn mạnh Nhà sách Mão không chỉ là nơi mua bán sách,
-      mà còn là nơi lưu giữ ký ức, thói quen và tình yêu đọc sách qua nhiều thế hệ.]
+    <p class="section-label">LỜI KẾT</p>
+
+    <h2>Những giá trị còn lại sau mỗi trang sách</h2>
+
+    <div class="article-content">
+
+      <p>
+        Với những người từng đi qua nhiều năm tháng cùng Nhà sách Mão, nơi đây có lẽ không chỉ là một địa chỉ để tìm mua sách, mà còn là nơi lưu giữ những mảnh ký ức của riêng mỗi người. Có thể những cuốn sách từng mua đã cũ đi, những người từng gặp gỡ không còn thường xuyên trở lại, nhưng cảm giác thân thuộc về một không gian đọc sách giữa lòng phố cổ vẫn còn nguyên vẹn.
+      </p>
+
+      <p>
+        Nói về khả năng hiệu sách không còn, Minh Anh bày tỏ:
+      </p>
+
+      <div class="pull-quote">
+        <blockquote>
+          “Chắc chắn việc mất đi không gian này sẽ rất buồn. Nhưng mình nghĩ đây còn là nơi lưu giữ kỷ niệm của rất nhiều người. Khi nhà sách không còn nữa, mọi người sẽ không chỉ nhớ về nơi này mà còn nhớ đến những khoảnh khắc, những kỷ niệm từng có ở đây. Không gian Nhà sách Mão là một điều gì đó rất đặc biệt, rất ít nơi khác có thể tái hiện hay thay thế được.”
+        </blockquote>
+        <p class="pull-quote-author">— Minh Anh · Độc giả trẻ</p>
+      </div>
+
+      <p>
+        Một hiệu sách có thể được thay thế bằng một cửa hàng mới, nhưng những ký ức hình thành qua nhiều thế hệ độc giả thì không dễ tìm lại. Bởi sau mỗi trang sách không chỉ là tri thức, mà còn là những cuộc gặp gỡ, những thói quen và tình yêu đọc sách được âm thầm vun đắp. Và đó cũng chính là giá trị khiến những hiệu sách lâu đời như Nhà sách Mão trở thành một phần không thể tách rời trong ký ức về phố Đinh Lễ và Hà Nội.
+      </p>
+
+    </div>
+
+    <p class="ending-note">
+      Một địa chỉ có thể đổi thay. Ký ức thì ở lại.
     </p>
 
-    <p class="ending-note">Một địa chỉ có thể đổi thay. Ký ức thì ở lại.</p>
   </section>
 
   <!-- THÔNG TIN CUỐI TRANG -->
@@ -371,6 +423,6 @@
   </footer>
 
   <script src="script.js"></script>
+
 </body>
-<div class="reading-progress"></div>
 </html>
